@@ -13,6 +13,10 @@ var users = require('./routes/users');
 // Declare plan routes
 var plans = require('./routes/plans');
 
+// Declare lesson routes
+var lesson = require('./routes/lesson'); 
+
+
 var app = express();
 
 // view engine setup
@@ -30,6 +34,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/plan', plans);
+app.use('/lesson', lesson);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
