@@ -11,4 +11,9 @@ router.get('/', function (req, res) {
 router.get('/learn', function (req, res) {
     res.render('Lesson/learn', { title:'Learning' })
 });
+
+/** POST lesson report*/
+router.post('/report', function (req, res) {
+    res.render('Lesson/report', { title:'Report' })
+});
 module.exports = router;
