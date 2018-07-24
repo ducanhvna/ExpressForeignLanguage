@@ -6,7 +6,11 @@ router.get('/', function (req, res) {
     res.render('Plan/create', { title: 'Create Plan' });
 });
 
-router.post('/create', function (req, res){
+router.post('/create', function (req, res) {
+    res.render('Plan/schedule', { title: 'Create Schedule' })
+});
+
+router.post('/schedule', function (req, res){
     res.render('Plan/details', { title: 'Report Detail' })
 });
 

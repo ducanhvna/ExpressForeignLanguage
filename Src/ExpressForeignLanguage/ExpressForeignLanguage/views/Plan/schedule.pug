@@ -1,0 +1,33 @@
+﻿extends ../layout
+
+block content
+    .row
+        h1.display-4.m-b-2 #{title}
+        
+        // Schedule form
+        form(method='POST' action='/plan/schedule')
+            div.form-group
+                label(for='name') Name:
+                input#name.form-control(type='text',placeholder='first and last' name='name')
+            div.form-group
+                label(for='overview') Overview:
+                input#name.form-control(type='text',placeholder='Overview of plan' name='overview')
+            // Create Circle Area
+            div.form-group
+                label(for='circleTime') Circle Time:
+                input#circletime.form-control(type='text', placeholder='Time for a circle: 1day, 1 week or, month, year...' name='circleTime')
+            div.form-group
+                label(for='numberlesson') Number of lesson in a circle:
+                input#numberlesson.form-control(type='text', placeholder='Number of lesson per a circle: 1, 2, 3, ...' name='numberlesson')
+            div.form-group
+                label(for='timeunit') Time unit:
+                input#timeunit.form-control(type='text', placeholder='Time unit: hour, day, week...' name='timeunit')
+            div.form-group
+                label(for='contentunit') Content unit:
+                input#contentunit.form-control(type='text', placeholder='Content unit: partiction, or lesson' name='contentunit')
+            div.form-group
+                label(for='numberstep') Number of Step:
+                input#numberstep.form-control(type='text', placeholder='Number of step in a schedule: 1, 2, 3, ...' name='numberstep')
+
+            // Create schedual button
+            button.btn.btn-primary(type='submit') Create
