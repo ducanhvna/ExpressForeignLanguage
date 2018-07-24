@@ -13,18 +13,31 @@ block content
                     div.form-group
                         label(for='overview') Overview:
                         input#name.form-control(type='text',placeholder='Overview of plan' name='overview')
+
+                    // Number of lesstion Area
                     div.form-group
-                        label(for='soundTemplate') Sound Template:
+                        label(for='numberLesson') Number of lesson:
+                        input#name.form-control(type='text', placeholder='Number of lesson in plan')
+
+                    // Mp3 files Area
+                    div.form-group
+                        label(for='numberMp3') Number of MP3 file:
+                        input#name.form-control(type='text', placeholder='Number of Mp3 file')
+                    div.form-group
+                        label(for='soundTemplate') Sound Templates:
                         .row
                             .col-md-3
                                 input#soundTemplate.form-control(type='text',placeholder='Name of Template file' name='soundTemplate1')
-                            button.col-md-offset-3.btn.btn-primary(type='button') New Sound File Template
+
+                    // Text Patition area
                     div.form-group
-                        label(for='textTemplate') Text Template:
+                        label(for='numberTextpart') Number of Text partition
+                        input#name.form-control(type='text', placeholder='Number of Text Partition')
+                    div.form-group
+                        label(for='textTemplate') Text Templates:
                         .row
                             .col-md-3
                                 input#textTemplate.form-control(type='text',placeholder='Name of text part' name='textTemplate1')
                             .col-md-3
                                 input#textTemplate2.form-control(type='text',placeholder='Name of parten' name='textTemplate2')
-                            button.col-md-offset-3.btn.btn-primary(type='button') New Text Participant
                     button.btn.btn-primary(type='submit') Create
