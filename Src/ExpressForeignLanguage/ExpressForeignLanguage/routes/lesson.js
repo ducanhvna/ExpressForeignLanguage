@@ -16,4 +16,24 @@ router.get('/learn', function (req, res) {
 router.post('/report', function (req, res) {
     res.render('Lesson/report', { title:'Report' })
 });
+
+/** GET lesson edit page*/
+router.get('/edit', function (req, res) {
+    res.render('Lesson/edit', { title:'Add Create Item for lesson' });
+});
+
+/** POST lesson edit page */
+router.post('/edit', function (req, res) {
+    res.render('Lesson/detail', { title: 'Detail of lesson' });
+});
+
+/** GET lesson create page*/
+router.get('/create', function (req, res) {
+    res.render('Lesson/create', { title: 'Add Create Item for lesson' });
+});
+
+/** POST lesson create page */
+router.post('/create', function (req, res) {
+    res.render('Lesson/detail', { title: 'Detail of lesson' });
+});
 module.exports = router;

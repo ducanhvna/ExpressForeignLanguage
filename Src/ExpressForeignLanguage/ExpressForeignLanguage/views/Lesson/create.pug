@@ -1,0 +1,14 @@
+﻿extends ../layout
+
+block content
+  .main.container
+    .row
+      .col-md-6.col-md-offset-3
+        h1.display-4.m-b-2 #{title}
+
+        // Create form
+        form(method = 'POST' action = '/plan/edit')
+          div.form-group
+            label(for='fileType1') Upload mp3 file Type 1
+            input#sampleFile(type='file')
+          button.btn.btn-primary(type='submit') Create
