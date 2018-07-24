@@ -28,6 +28,43 @@ block content
             div.form-group
                 label(for='numberstep') Number of Step:
                 input#numberstep.form-control(type='text', placeholder='Number of step in a schedule: 1, 2, 3, ...' name='numberstep')
-
+            div.form-group
+                label(for='schedule') Schedule:
+            .row
+                .col-md-1
+                     label Step 01
+                .col-md-1
+                     label Month 01
+                .col-md-1
+                     label Week 01
+                .col-md-1
+                     label Day 01
+                .col-md-2
+                     input#hour01.form-control(type='text', placeholder='Insert hour taken' name='hour01')
+                .col-md-3
+                     input#hour01.form-control(type='text', placeholder='Insert actionL read, write, listen, speaking' name='action01')
+                .col-md-1
+                     label repeated number
+                .col-md-2
+                     input#hour01.form-control(type='text', placeholder='Insert file/pattion to use' name='hour01')
+            .row
+                .col-md-1
+                     label Step 02
+                .col-md-1
+                     label Month 02
+                .col-md-1
+                     label Week 02
+                .col-md-1
+                     label Day 02
+                .col-md-2
+                     input#hour02.form-control(type='text', placeholder='Insert hour taken' name='hour02')
+                .col-md-3
+                     input#hour02.form-control(type='text', placeholder='Insert actionL read, write, listen, speaking' name='action02')
+                .col-md-1
+                     label repeated number
+                .col-md-2
+                     input#hour02.form-control(type='text', placeholder='Insert file/pattion to use' name='hour02')
             // Create schedual button
+
+
             button.btn.btn-primary(type='submit') Create
