@@ -31,6 +31,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="model\lessonModel.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="model\plansModel.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="model\userModel.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="public\javascripts\main.js">
       <SubType>Code</SubType>
     </Compile>
@@ -97,6 +106,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="model\" />
     <Folder Include="public\" />
     <Folder Include="public\css\" />
     <Folder Include="public\fonts\" />
