@@ -7,9 +7,17 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+        <Grid>
             <!--main Treeview-->
-        <TreeView>
             
-        </TreeView>
+            <TreeView>
+
+            </TreeView>
+        </Grid>
+        
     </Grid>
 </UserControl>
